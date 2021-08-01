@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.activity.ChatLogActivity"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_message_log_chat_log"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#85B300"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/edit_text_message_chat_log"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <Button
+            android:id="@+id/button_send_message_chat_log"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/ripple_effect"
+            android:text="Send"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="#777777"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_text_message_chat_log"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edit_text_message_chat_log" />
+
+        <EditText
+            android:id="@+id/edit_text_message_chat_log"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:singleLine="true"
+            android:hint="Message"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_send_message_chat_log"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
