@@ -1,7 +1,7 @@
 # ChatLogMVI
   
 Chat over MVI pattern
-sdf
+
 #Dependencies 
 [CircleImageView](https://github.com/hdodenhof/CircleImageView)
 [Picasso](https://square.github.io/picasso/)
